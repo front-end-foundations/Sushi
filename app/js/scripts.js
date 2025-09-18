@@ -2,7 +2,8 @@
 console.log("Hello from scripts.js!");
 console.log(window);
 // window.prompt('correct?')
-// window.console.dir(window.document);
+// window.location;
+// window.location.replace('http://www.google.com');
 
 /* 1::  querySelector - uncomment in sequence */
 // var bodyElement = document.querySelector("body");

@@ -26,8 +26,8 @@
   - [Aside - playing with the console](#aside---playing-with-the-console)
   - [A Quick Note on jQuery](#a-quick-note-on-jquery)
   - [Creating the Popover](#creating-the-popover)
-      - [QuerySelector](#queryselector)
-      - [addEventListener](#addeventlistener)
+    - [QuerySelector](#queryselector)
+    - [addEventListener](#addeventlistener)
     - [Moving the Toggle](#moving-the-toggle)
     - [Using Event Delegation](#using-event-delegation)
   - [Closing the Pop Over](#closing-the-pop-over)
@@ -753,7 +753,7 @@ We will add CSS that overrides undesirable features to correct the display on sm
 Begin by removing the margin from the body and article and fixing the nav to the top of the screen.
 
 ```css
-@media all and (width < 800px) {
+@media (width < 800px) {
   body {
     margin: 0;
   }
@@ -772,7 +772,7 @@ Begin by removing the margin from the body and article and fixing the nav to the
 Use the [flexbox CSS module](https://codepen.io/DannyBoyNYC/pen/QYaNab) on the nav:
 
 ```css
-@media all and (max-width: 800px) {
+@media (width < 800px) {
   /* ... omitted for bevity  */
   .nav {
     position: fixed;
@@ -796,7 +796,7 @@ Note that the absolutely positioned aside region scrolls _over the top_ of the n
 Revert aside's position property to `static` (the default).
 
 ```css
-@media all and (max-width: 800px) {
+@media (width < 800px) {
   /* ... omitted for bevity  */
   aside {
     position: static;
@@ -809,7 +809,7 @@ Revert aside's position property to `static` (the default).
 Add adjustments to the image and blockquote:
 
 ```css
-@media all and (max-width: 800px) {
+@media (width < 800px) {
   /* ... omitted for bevity  */
   blockquote {
     width: 100%;
