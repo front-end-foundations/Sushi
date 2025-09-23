@@ -1307,9 +1307,9 @@ So instead of listening to specific elements, we’ll listen for all click event
 Let's start over again by examining the event targets:
 
 ```js
-document.addEventListener("click", show);
+document.addEventListener("click", handleClicks);
 
-function show(e) {
+function handleClicks(e) {
   console.log(e.target);
   // 'event.target' is the clicked element
   e.preventDefault();

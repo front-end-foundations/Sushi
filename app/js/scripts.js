@@ -4,6 +4,8 @@ console.log(window);
 // window.prompt('correct?')
 // window.location;
 // window.location.replace('http://www.google.com');
+// let loc = window.location
+/* view variable in console */
 
 /* 1::  querySelector - uncomment in sequence */
 // var bodyElement = document.querySelector("body");
